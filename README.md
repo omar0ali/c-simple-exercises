@@ -1,4 +1,4 @@
-# Simple Apps in C 
+# C Simple Exercises
 
 A collection of simple C applications for personal use and language practice.
 
