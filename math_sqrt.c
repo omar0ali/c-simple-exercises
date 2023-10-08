@@ -3,8 +3,9 @@
 #include "math_header.h" 
 
 
-double sqrt() {
+double math_sqrt() {
     //TODO: Implement sqrt function.
+    return 0.0;
 }
 
 int main (int c, char** args) {
