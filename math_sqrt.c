@@ -5,13 +5,17 @@
 int math_square(int num) {
     return num * num;
 }
-
+/** This function is not 100% accurate, but conceptually a valid solution.
+ * Lack of Precision: The method of iterating and squaring numbers is approximate. It won't give you an exact square root, which can be problematic for applications where precision matters.
+ * Inefficient: This approach requires a loop that iterates through numbers, squaring each one until it meets the criteria. For large numbers, this can be very slow.
+ * Limited to Integers: This method only works for integer square roots.
+*/
 int math_sqrt(int find) {
     int result = 0;
     int squareNumber = 1;
     while(1) {
-        result = math_square(squareNumber);
-        if(result >= find) {
+        result = math_square(squareNumber); //Square the number
+        if(result >= find) { //Check if its equal or larger than what we need to find.
             break;
         }
         squareNumber++;
