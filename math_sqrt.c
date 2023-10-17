@@ -19,7 +19,7 @@ double math_sqrt(double find) {
         }
         squareNumber+= 0.1;
     }
-    return squareNumber;
+    return squareNumber-0.1;
 }
 
 int main (int c, char** args) {
@@ -28,6 +28,6 @@ int main (int c, char** args) {
         printf("Usage: %s <number>\n", args[0]);
         return 1;
     }
-    printf("Result: %8.3lf\n", (double) math_sqrt(atoi(args[1])));
+    printf("Result: %8.1lf\n", (double) math_sqrt(atoi(args[1])));
     return 0;
 }
