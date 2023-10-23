@@ -10,11 +10,9 @@ double math_square(double num) {
  * Inefficient: This approach requires a loop that iterates through numbers, squaring each one until it meets the criteria. For large numbers, this can be very slow.
  */
 double math_sqrt(double find) {
-    double result = 0.0;
     double squareNumber = 1.0;
     while(1) {
-        result = math_square(squareNumber); //Square the number
-        if(result >= find) { //Check if its equal or larger than what we need to find.
+        if(math_square(squareNumber) >= find) { //Check if its equal or larger than what we need to find.
             break;
         }
         squareNumber+= 0.1;
