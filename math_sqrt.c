@@ -2,6 +2,10 @@
 #include<stdlib.h>
 #include "math_header.h" 
 
+/* This is called macro. Another way of writing the math_square(num) function.
+It returnes the square of a number. */
+#define MATH_SQUARE(X) (X) * (X)
+
 double math_square(double num) {
     return num * num;
 }
@@ -12,7 +16,7 @@ double math_square(double num) {
 double math_sqrt(double find) {
     double squareNumber = 1.0;
     while(1) {
-        if(math_square(squareNumber) >= find) { //Check if its equal or larger than what we need to find.
+        if(MATH_SQUARE(squareNumber) >= find) { //Check if its equal or larger than what we need to find.
             break;
         }
         squareNumber+= 0.1;
