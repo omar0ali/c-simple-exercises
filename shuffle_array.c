@@ -14,7 +14,6 @@ int isIntegerInArray(int target, int arr[], int size)
     }
     return 0; // The integer is not in the array
 }
-// TODO: Implement function to shuffle.
 void shuffle(int n, char *array[])
 {
     srand(time(NULL)); // Seed the random number generator
