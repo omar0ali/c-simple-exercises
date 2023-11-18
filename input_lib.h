@@ -109,4 +109,14 @@ char * trim(char*strs) {
     return val;
 }
 
+
+void copyTo(char *copied, char *to) {
+    int i = 0;
+    for (; i < len(copied); i++) {
+        to[i] = copied[i];
+    }
+    to[i] = '\0';
+}
+
+
 #endif // INPUT_LIB_H
